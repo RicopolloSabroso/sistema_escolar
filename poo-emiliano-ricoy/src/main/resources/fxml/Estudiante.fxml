@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.udelp.poo.emiliano.ricoy.EstudianteController">
+   <children>
+      <TextArea fx:id="estudianteDatos" layoutX="27.0" layoutY="113.0" prefHeight="272.0" prefWidth="554.0" />
+      <ComboBox fx:id="semestreOpcionEstudiante" layoutX="104.0" layoutY="23.0" prefWidth="150.0" />
+      <ComboBox fx:id="seleccionarMateriaCalificaciones" layoutX="413.0" layoutY="23.0" prefWidth="150.0" />
+      <Label layoutX="27.0" layoutY="28.0" text="Semestre" />
+      <Label layoutX="329.0" layoutY="28.0" text="Materia" />
+      <Button layoutX="26.0" layoutY="76.0" mnemonicParsing="false" onAction="#buscar" text="buscar" />
+   </children>
+</AnchorPane>

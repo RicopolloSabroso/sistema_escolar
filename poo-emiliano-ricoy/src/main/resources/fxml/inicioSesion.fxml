@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.udelp.poo.emiliano.ricoy.Sesion">
+   <children>
+      <Button layoutX="247.0" layoutY="299.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar Sesion" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="23.0" prefHeight="96.0" prefWidth="343.0" text="Universidad Del Pedregal">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="168.0" text="Usuario" />
+      <Label layoutX="144.0" layoutY="221.0" text="Contraseña" />
+      <TextField fx:id="usuario" layoutX="261.0" layoutY="163.0" />
+      <PasswordField fx:id="contrasena" layoutX="261.0" layoutY="216.0" />
+   </children>
+</Pane>

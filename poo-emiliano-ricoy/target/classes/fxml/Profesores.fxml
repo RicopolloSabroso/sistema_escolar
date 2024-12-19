@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.udelp.poo.emiliano.ricoy.ProfesorController">
+   <children>
+      <TabPane prefHeight="510.0" prefWidth="809.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Calificar Alumnos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="50.0" layoutY="77.0" text="Alumno" />
+                        <Label layoutX="50.0" layoutY="30.0" text="Materia" />
+                        <ComboBox fx:id="seleccionarAlumno" layoutX="161.0" layoutY="72.0" prefWidth="150.0" />
+                        <ComboBox fx:id="seleccionarMateriaCalificaciones" layoutX="161.0" layoutY="25.0" prefWidth="150.0" />
+                        <Label layoutX="54.0" layoutY="295.0" text="Examen Final" />
+                        <Label layoutX="54.0" layoutY="247.0" text="Proyecto Final" />
+                        <Label layoutX="54.0" layoutY="194.0" text="Segundo Parcial" />
+                        <Label layoutX="55.0" layoutY="142.0" text="Primer Parcial" />
+                        <TextField fx:id="primerParcial" layoutX="168.0" layoutY="137.0" />
+                        <TextField fx:id="segundoParcial" layoutX="168.0" layoutY="189.0" />
+                        <TextField fx:id="proyecto" layoutX="168.0" layoutY="242.0" />
+                        <TextField fx:id="examenFinal" layoutX="168.0" layoutY="290.0" />
+                        <Button layoutX="439.0" layoutY="189.0" mnemonicParsing="false" onAction="#calificacion" text="Agregar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Materias del Profesor">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tablaMaterias" layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="760.0">
+                          <columns>
+                            <TableColumn fx:id="nombreMateria" prefWidth="209.0" text="Nombre" />
+                            <TableColumn fx:id="carreraMateria" minWidth="0.0" prefWidth="292.0" text="Carrera" />
+                              <TableColumn fx:id="semestreMateria" prefWidth="168.0" text="Semestre" />
+                              <TableColumn fx:id="horarioMateria" prefWidth="90.0" text="Horario" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Reportes">
+
+                <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="68.0" layoutY="80.0" text="Alumno" />
+                        <ComboBox fx:id="obtenerDatosAlumno" layoutX="157.0" layoutY="75.0" prefWidth="150.0" />
+                        <Button layoutX="62.0" layoutY="116.0" mnemonicParsing="false" onAction="#datosAlumnoBox" text="Buscar" />
+                        <TextArea fx:id="areaDatosAlumno" layoutX="61.0" layoutY="169.0" prefHeight="264.0" prefWidth="679.0" />
+                        <Label layoutX="68.0" layoutY="31.0" text="Carrera" />
+                        <ComboBox fx:id="obtenerDatosCarrera" layoutX="157.0" layoutY="26.0" prefWidth="150.0" />
+                        <Label layoutX="361.0" layoutY="80.0" text="Materias" />
+                        <ComboBox fx:id="obtenerDatosSemestre" layoutX="443.0" layoutY="26.0" prefWidth="150.0" />
+                        <Label layoutX="17.0" layoutY="4.0" text="La Carrera y el semestre se tienen que poner obligatorio" />
+                        <ComboBox fx:id="obtenerDatosMateria" layoutX="443.0" layoutY="75.0" prefWidth="150.0" />
+                        <Label layoutX="359.0" layoutY="31.0" text="Semestre" />
+                     </children></AnchorPane>
+              </content>
+        
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
